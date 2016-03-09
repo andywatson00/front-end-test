@@ -1,0 +1,21 @@
+<header class="dark">
+  <nav>
+    <div id="logo">
+      <h1>FRONT-END TEST</h1>
+    </div>
+    <div id="menu">
+      <ul>
+        <li>
+          {{#link-to 'index'}}<a>Home</a>{{/link-to}}
+          {{#link-to 'contact'}}<a>Contact</a>{{/link-to}}
+
+          {{#if session.isAuthenticated}}
+            <a {{action 'logout'}} >Logout</a>
+          {{else}}
+            <a {{action 'login'}} >Login</a>
+          {{/if}}
+          </li>
+      </ul>
+    </div>
+  </nav>
+</header>

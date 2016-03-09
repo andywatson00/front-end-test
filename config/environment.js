@@ -16,6 +16,18 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    contentSecurityPolicy: {
+      'style-src': "'self' 'unsafe-inline'"
+    }
+  };
+
+  ENV.torii = {
+    providers: {
+      'facebook-oauth2': {
+        apiKey: '631252926924840'
+      }
     }
   };
 
