@@ -152,25 +152,6 @@ header.dark nav #menu ul li a.active {
 header.dark nav #menu ul li a.active:after {
 	background-color:#f67c05;
 }
-
-.flex-direction-nav li a {
-	position:absolute;
-	background-position:0 0;
-	width:35px;
-	height:100px;
-	background-color:#323232;
-	top:50%;
-}
-.flex-direction-nav li .next {
-	background-image:url(../images/next.png);
-	background-position:0 0;
-	right:0;
-}
-.flex-direction-nav li .prev {
-	background-image:url(../images/prev.png);
-	background-position:0 0;
-	left:0;
-}
 .container {
 	width:100%;
 }
@@ -291,6 +272,22 @@ header.dark nav #menu ul li a.active:after {
 	font-size:16px;
 	color:#9d3131;
 }
+.subtitlerror {
+	position:relative;
+	font-size:16px;
+	padding:10px 10px;
+	margin:5px 5px 4px 1px;
+	border:none;
+	color:#f67c05;
+	float:left;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-weight:700;
+	width:300px;
+	height:50px;
+	border-radius:5px;
+}
+
 .subbutton {
 	position:relative;
 	font-size:18px;
@@ -309,7 +306,7 @@ header.dark nav #menu ul li a.active:after {
 }
 .subbutton:hover {
 	color:#fff;
-	background-color:#2a2c2d;
+	background-color:#424242;
 }
 .light {
 	background-color:#f4f4f4;

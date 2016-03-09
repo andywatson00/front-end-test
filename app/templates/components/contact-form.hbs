@@ -1,0 +1,19 @@
+<div id="contact-form">
+  <form id="contact-us" {{action 'postMessage' on='submit'}}>
+
+      <div class="formblock">
+        {{input value=contactName class="txt requiredField" placeholder="Name: " autofocus="autofocus"}}
+      </div>
+      <div class="formblock">
+        {{input value=contactEmail class="txt requiredField" placeholder="Email: "}}
+      </div>
+      <div class="formblock">
+        {{textarea value=contactMessage class="txtarea requiredField" placeholder="Message: "}}
+      </div>
+      <button name="submit" type="submit" class="subbutton">Send</button>
+      {{#if responseMessage}}
+      <div class="subtitlerror">{{responseMessage}}</div>
+      {{/if}}
+
+  </form>
+</div>
