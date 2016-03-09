@@ -1,7 +1,6 @@
 # Front-end-test
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a test web app with a basic authentication that makes use of ember and ember-simple-auth. The authentication is done via Facebook using the [Torri Library](https://github.com/Vestorly/torii). It also makes use of [Express](http://expressjs.com/) as a mock server.
 
 ## Prerequisites
 
