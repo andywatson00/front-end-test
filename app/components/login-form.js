@@ -9,13 +9,10 @@ export default Ember.Component.extend({
     authenticateWithFacebook() {
       var _this = this;
       this.get('session').authenticate('authenticator:torii', 'facebook').then(() => {
-        alert('Success! ' + _this.get('session.token'));
+        //alert('Success! ' + _this.get('session.token'));
       }, (err) => {
         alert('Error obtaining access token: ' + err.responseText);
       });
     }
-
-
-      //this.get('session').authenticate('authenticator:torii', 'facebook-oauth2');
   }
 });
